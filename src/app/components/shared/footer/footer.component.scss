@@ -1,0 +1,28 @@
+.section-footer{
+    display: flex;
+    flex-direction: row;
+    padding: 3rem 0;
+    background-color: #29b6f6;
+    color: #fff;
+    h2{
+        color: #fff;
+    }
+}
+.socials-col{
+    text-align: center;
+}
+.about{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    ul {
+        margin:0;
+        padding: 0;
+        li{
+            font-size: 1.5rem;
+            line-height: 2rem;
+            list-style: none;
+        }
+    }
+}
