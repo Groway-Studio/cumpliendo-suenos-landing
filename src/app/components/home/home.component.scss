@@ -1,7 +1,12 @@
+@import './../../../styles.scss';
+
 .container{
     width: 80%;
     display: flex;
     margin: 0 auto;
+    @include phone {
+        width: 100%;
+    }
 }
 .first-section{
     padding-top: 5rem;
@@ -9,6 +14,47 @@
     flex-direction: row;
     padding-bottom: 4rem;
     padding-left: 5rem;
+    @include phone {
+        flex-direction: column;
+        padding: 2rem;
+        box-sizing: border-box;
+    }
+
+    .col-2{
+        @include phone {
+            width: 100%;
+        }
+       
+    }
+}
+.images-ilus{
+    @include phone {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    img{
+        @include phone {
+            width: 46%;
+        } 
+    }
+}
+.text-p{
+    @include phone {
+        padding-right: 0!important;
+    }
+    
+}
+h1.titleSection{
+    @include phone {
+        font-size: 2rem!important;
+        line-height: 32pt!important;
+    } 
+}
+p.paragraphSection{
+    @include phone {
+        font-size: .8rem!important;
+        line-height: 24pt!important;
+    } 
 }
 .second-section{
     top: 5rem;
@@ -17,11 +63,40 @@
     flex-direction: row;
     padding-bottom: 14rem;
     padding-left: 5rem;
+    @include phone {
+        top: 2.4rem;
+        flex-direction: column;
+        padding: 2rem!important;
+        box-sizing: border-box;
+    }
+    .col-2{
+        @include phone {
+            width: 100%;
+        }
+       
+    }
+    .images-ilus{
+        @include phone {
+            flex-direction: column;
+        }
+        img{
+            @include phone {
+                width: 50%;
+            } 
+        }
+    }
 }
 
 .three-section{
     display: flex;
     flex-direction: column;
+    .col-12{
+        @include phone {
+            width: 100%!important;
+            text-align: center;
+        }
+    }
+
 }
 .four-section{
     padding-top: 4rem;
@@ -89,6 +164,9 @@
     width: 470px;
     position: relative;
     right: -5.8rem;
+    @include phone {
+        right: 0!important;
+    }
 }
 .text-p{
     padding-right: 5rem;
@@ -116,12 +194,39 @@
     padding: 2rem;
     position: relative;
     margin-bottom: 10rem;
+
+    @include phone {
+        display: flex;
+        flex-direction: row!important;
+    }
     img{
         width: 200px!important;
         position: relative;
         top: 10px;
+        @include phone {
+            width: 100px!important;
+        }
     }
 }
+.title-work{
+    @include phone {
+        text-align: center;
+    }
+}
+.item-box{
+    display: flex;
+    @include phone {
+        text-align: center;
+        display: flex;
+        flex-direction: column!important;
+    }
+    .col-5{
+        @include phone {
+            width: 100%;
+        } 
+    }
+}
+
 
 .section-box-2{
     width: 90%;
