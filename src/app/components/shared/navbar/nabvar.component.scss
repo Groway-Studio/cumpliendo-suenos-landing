@@ -1,9 +1,0 @@
-@import '../../../../styles.scss';
-.container{
-    height: 100vh;
-}
-.mat-sidenav-container{
-    @include phone {
-        margin-top: 0px!important;
-    }
-}
