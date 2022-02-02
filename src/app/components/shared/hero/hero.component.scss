@@ -5,8 +5,9 @@
     height: 100vh;
     display: flex;
     flex-direction: row;
-    // background-image: url('assets/images/background.png');
-  
+    background: url('/assets/images/background.svg') no-repeat;
+    background-position: center;
+    background-size: cover;
 
     @include phone {
         flex-direction: column;
@@ -16,6 +17,7 @@
     }
     .image-bg{
         width: 100%;
+        height: auto;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -26,7 +28,7 @@
             background-position: top;
             background-size: cover;
             position: absolute;
-            height: 100vh;
+         
         }
     }
 }

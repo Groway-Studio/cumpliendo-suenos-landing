@@ -11,10 +11,17 @@
         
     }
 }
+.comillas-cierre{
+    top: 2rem;
+    left: 0;
+}
 .comillas-apertura, .comillas-cierre{
     @include phone {
-        top: 0;
+        position: relative!important;
         font-size: 2rem;
+        top: auto!important;
+        left: auto!important;
+        right: auto!important;
     }
 }
 .item-proj-p{
