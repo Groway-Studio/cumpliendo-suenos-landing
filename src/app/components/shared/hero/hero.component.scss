@@ -5,15 +5,29 @@
     height: 100vh;
     display: flex;
     flex-direction: row;
-    background-image: url('assets/images/background.svg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    // background-image: url('assets/images/background.png');
+  
 
     @include phone {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        height: auto;
+    }
+    .image-bg{
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        z-index: 0;
+        @include phone {
+            object-fit: fill;
+            background-position: top;
+            background-size: cover;
+            position: absolute;
+            height: 100vh;
+        }
     }
 }
 .logo-portada{
@@ -23,8 +37,12 @@
     align-items: center;
     img{
         border-radius: 50%;
+        width: 360px;
+        z-index: 1000;
         @include phone {
-            width: 80%;
+            padding-top: 2rem;
+            width: 40%;
+            z-index: 10000;
         }
     }
 }
@@ -34,7 +52,7 @@
     justify-content: center;
     align-items: left;
     @include phone {
-        margin-top: 2rem;
+        margin-top: 1rem;
         align-items: center;
         width: 100%!important;
     }

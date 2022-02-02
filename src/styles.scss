@@ -171,6 +171,11 @@ h2 hr.outline-right{
   margin-block-start: -8px;
   margin-left: 16px;
   width: 104%;
+  @include phone {
+    width: 90%!important;
+    margin-left: 0;
+    margin-top: 1rem;
+  }
 }
 .title-item{
   color: #0233C2;

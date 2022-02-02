@@ -1,11 +1,33 @@
+@import '../../../../styles.scss';
+
 .section-footer{
     display: flex;
     flex-direction: row;
     padding: 3rem 0;
     background-color: #29b6f6;
     color: #fff;
+    @include phone {
+        flex-direction: column;
+        text-align: center;
+    }
     h2{
         color: #fff;
+    }
+    .col-5 , .col-1 {
+        @include phone {
+            width: 100%;
+        }
+
+    }
+    .about{
+        @include phone {
+            width: 100%;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            margin-top: 2rem;
+        }
+
     }
 }
 .socials-col{

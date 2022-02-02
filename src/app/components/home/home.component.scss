@@ -4,8 +4,11 @@
     width: 80%;
     display: flex;
     margin: 0 auto;
+    box-sizing: border-box;
     @include phone {
         width: 100%;
+        text-align: left;
+        padding: 1rem;
     }
 }
 .first-section{
@@ -90,6 +93,9 @@ p.paragraphSection{
 .three-section{
     display: flex;
     flex-direction: column;
+    @include phone {
+        padding: 1rem;
+    }
     .col-12{
         @include phone {
             width: 100%!important;
@@ -100,14 +106,37 @@ p.paragraphSection{
 }
 .four-section{
     padding-top: 4rem;
+    @include phone {
+       display: flex;
+       flex-direction: column;
+    }
+}
+.list-number{
+    display: flex;
+    flex-direction: row;
+    @include phone {
+        flex-direction: column;
+    }
+    .col-5{
+        @include phone {
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+    }
 }
 .work-title{
     font-size: 3rem!important;
     font-weight: bold;
+    @include phone {
+        font-size: 2.5rem!important; 
+    }
 }
 .title-right span{
     font-size: 1.2rem;
     width: 40%;
+    @include phone {
+        width: 100%;
+    }
 }
 
 .five-section{
@@ -116,6 +145,7 @@ p.paragraphSection{
     flex-direction: column;
     justify-content: flex-end;
     margin-top: 8rem;
+
 }
 .box{
     background-color: #29b6f6;
@@ -127,6 +157,11 @@ p.paragraphSection{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    @include phone {
+        padding: 4rem 0;
+        width: 100%;
+       flex-direction: column;
+    }
     h1{
         color: #ffffff;
         font-size: 3.0rem !important;
@@ -134,12 +169,29 @@ p.paragraphSection{
         width: 80%;
         padding-right: 12rem;
         padding-left: 12rem;
+        @include phone {
+            width: 100%;
+            padding-left: 0rem;
+            padding-right: 0rem;
+            font-size: 1.5rem!important;
+         }
     }
 }
 .box-button{
     margin: 8rem 0;
     display: flex;
     justify-content: center;
+    @include phone {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+     }
+     button{
+        @include phone {
+         margin-bottom: 1rem;
+         text-align: center;
+         } 
+     }
 }
 .btn-dark{
     background-color: #000;
@@ -149,6 +201,9 @@ p.paragraphSection{
     margin-right: 4rem;
     font-weight: 200;
     font-size: 1.1rem;
+    @include phone {
+        margin-right: 0;
+    }
 }
 
 .tren-bg, .avion-bg , .oso-bg , .tambor-bg {
@@ -178,10 +233,14 @@ p.paragraphSection{
     width: 430px;
     position: relative;
     right: -5.8rem;
+  
 }
 
 .title-work{
     width: 40%;
+    @include phone {
+        width: 100%;
+    }
 }
 
 .section-box{
@@ -198,19 +257,24 @@ p.paragraphSection{
     @include phone {
         display: flex;
         flex-direction: row!important;
+        box-sizing: border-box;
+        width: 100%;
     }
     img{
         width: 200px!important;
         position: relative;
         top: 10px;
         @include phone {
-            width: 100px!important;
+            width: 80px!important;
         }
     }
 }
 .title-work{
     @include phone {
         text-align: center;
+    }
+    .outline{
+        margin-top: 1rem;
     }
 }
 .item-box{
@@ -239,26 +303,44 @@ p.paragraphSection{
     padding: 2rem;
     position: relative;
     margin-bottom: 10rem;
+    @include phone {
+        width: 100%;
+        padding: 0;
+    }
     img{
         width: 200px;
         position: relative;
         top: 10px;
+    
     }
 }
 .conejo{
     width: 170px!important;
+    @include phone {
+        width: 100px!important;
+    }
 }
 .bailarina{
     width: 220px!important;
+    @include phone {
+        width: 100px!important;
+    }
 }
 .cubos{
     width: 350px!important;
+    @include phone {
+        width: 120px!important;
+    }
 }
 .barco-img{
     width: 215px;
     position: absolute;
     top: -83px;
     right: -70px;
+    @include phone {
+        width: 120px;
+        right: 0px!important;
+        }
 }
 
 .pelota-img{
@@ -266,4 +348,7 @@ p.paragraphSection{
     position: absolute;
     left: 25px;
     bottom: -120px;
+    @include phone {
+    width: 120px;
+    }
 }

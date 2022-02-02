@@ -1,8 +1,18 @@
+@import './../../../styles.scss';
 .subscription{
     display: flex;
     flex-direction: row;
     background-color: #29b6f6;
     padding: 2rem;
+    @include phone {
+        display: flex;
+        flex-direction: column;
+    }
+    .col-5, .col-6{
+        @include phone {
+            width: 100%;
+        }  
+    }
 }
 .container{
     width: 80%;
@@ -13,6 +23,21 @@
     display: flex;
     flex-direction: column;
     padding: 2rem 8rem 2rem 4rem;
+    @include phone {
+        padding: 2rem 0;
+    }
+}
+.form-group{
+    @include phone{
+        display: flex;
+        flex-direction: column;
+    }
+    input{
+        @include phone{
+            width: auto;
+            margin: 0 0 1rem 0;
+        }
+    }
 }
 .subs span{
     font-size: 1.2rem;
