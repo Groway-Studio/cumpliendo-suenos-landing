@@ -301,7 +301,9 @@ h2 hr.outline-right{
 .mat-drawer-container{
   background-color: #ffffff!important;
 }
-
+.mat-drawer-content{
+  overflow: none!important;
+}
 .carrousel-row{
   display: flex;
   flex-direction: column;
