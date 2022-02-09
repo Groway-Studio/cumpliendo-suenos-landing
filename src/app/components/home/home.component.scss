@@ -199,9 +199,14 @@ p.paragraphSection{
     color: #fff;
     border-radius: 36px;
     padding: 1rem 4rem;
-    margin-right: 4rem;
     font-weight: 200;
     font-size: 1.1rem;
+    &:first-child{
+        margin-right: 2rem;
+    }
+    &:last-child{
+        margin-left: 2rem;
+    }
     @include phone {
         margin-right: 0;
         padding: 1rem 3rem;
